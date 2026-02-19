@@ -937,7 +937,27 @@ h3 { font-size: 1.15rem; }
     .hamburger.active span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
     .header-actions .btn-whatsapp span { display: none; }
-    .header-actions .btn-whatsapp { padding: 10px; border-radius: 50%; }
+    .header-actions .btn-whatsapp {
+        padding: 8px;
+        border-radius: 50%;
+        background: transparent;
+        color: var(--whatsapp);
+        box-shadow: none;
+        border: 1.5px solid var(--whatsapp);
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-actions .btn-whatsapp:hover {
+        background: var(--whatsapp);
+        color: var(--white);
+    }
+    .header-actions .btn-whatsapp svg {
+        width: 16px;
+        height: 16px;
+    }
 
     .hero { padding: 50px 0 80px; }
     .hero h1 { font-size: 1.8rem; }
@@ -985,5 +1005,29 @@ h3 { font-size: 1.15rem; }
     }
     .top-bar {
         padding-top: env(safe-area-inset-top);
+    }
+}
+
+/* ===========================
+   Refined Floating Buttons (Mobile)
+   =========================== */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    }
+    .whatsapp-float svg {
+        width: 24px;
+        height: 24px;
+    }
+    .call-float {
+        width: 50px;
+        height: 50px;
+        box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
+    }
+    .call-float svg {
+        width: 20px;
+        height: 20px;
     }
 }
