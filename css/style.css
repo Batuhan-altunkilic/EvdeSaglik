@@ -278,6 +278,24 @@ h3 { font-size: 1.15rem; }
 
 .header-actions { display: flex; align-items: center; gap: 12px; }
 
+/* Mobile phone CTA in header */
+.header-cta-mobile {
+    display: none;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--red);
+    background: var(--red-light);
+    padding: 7px 14px;
+    border-radius: var(--radius-full);
+    transition: var(--transition);
+}
+.header-cta-mobile:hover {
+    background: var(--red);
+    color: var(--white);
+}
+
 /* Hamburger */
 .hamburger {
     display: none;
@@ -958,6 +976,10 @@ h3 { font-size: 1.15rem; }
         width: 16px;
         height: 16px;
     }
+
+    /* Mobile: hide WhatsApp, show phone CTA */
+    .header-whatsapp-desktop { display: none !important; }
+    .header-cta-mobile { display: inline-flex !important; }
 
     .hero { padding: 50px 0 80px; }
     .hero h1 { font-size: 1.8rem; }
