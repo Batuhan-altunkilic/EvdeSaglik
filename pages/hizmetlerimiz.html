@@ -21,6 +21,48 @@
 
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Sağlık Kapında - Evde Sağlık Hizmetleri",
+        "description": "Evde serum takma, sonda takma, NG takma, pansuman, enjeksiyon, damar yolu açma hizmetleri. Esenyurt ve çevresinde 7/24 evde hemşire hizmeti.",
+        "url": "https://www.saglikkapinda.com.tr/pages/hizmetlerimiz.html",
+        "telephone": "+905452690856",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Evde Sağlık Hizmetleri",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evde Serum Takma"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evde Sonda Takma"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evde NG Takma"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evde Pansuman"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evde Enjeksiyon"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Damar Yolu Açma"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tansiyon Ölçme"}}
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Ana Sayfa"
+            },            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Hizmetlerimiz"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Top Bar -->
@@ -40,10 +82,29 @@
                 <svg class="logo-icon" width="42" height="42" viewBox="0 0 100 100" fill="none"><path d="M50 85 C50 85, 15 58, 15 36 C15 23, 25 14, 36 14 C42 14, 47 17, 50 21 C53 17, 58 14, 64 14 C75 14, 85 23, 85 36 C85 58, 50 85, 50 85Z" stroke="#C8102E" stroke-width="3" fill="none"/><path d="M35 38 C35 38, 40 32, 50 38 C60 32, 65 38, 65 38" stroke="#C8102E" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M35 48 C35 48, 40 54, 50 48 C60 54, 65 48, 65 48" stroke="#C8102E" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M38 33 L38 53" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round"/><path d="M50 30 L50 55" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round"/><path d="M62 33 L62 53" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round"/><line x1="33" y1="43" x2="67" y2="43" stroke="#C8102E" stroke-width="2.5" stroke-linecap="round"/></svg>
                 <div class="logo-text"><span class="logo-title">Evde Sağlık</span><span class="logo-subtitle">7/24 Evde Hemşire Hizmeti</span></div>
             </a>
-            <nav class="nav" id="nav">
+                        <nav class="nav" id="nav">
                 <a href="../index.html" class="nav-link">Ana Sayfa</a>
-                <a href="hizmetlerimiz.html" class="nav-link active">Hizmetlerimiz</a>
-                <a href="hizmet-bolgelerimiz.html" class="nav-link">Hizmet Bölgelerimiz</a>
+                <div class="nav-dropdown">
+                    <a href="hizmetlerimiz.html" class="nav-link">Hizmetlerimiz <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="dropdown-menu">
+                        <a href="evde-serum-takma.html">Evde Serum Takma</a>
+                        <a href="evde-sonda-takma.html">Evde Sonda Takma</a>
+                        <a href="evde-ng-takma.html">Evde NG Takma</a>
+                        <a href="evde-pansuman.html">Evde Pansuman & Yara Bakımı</a>
+                        <a href="evde-enjeksiyon.html">Evde Enjeksiyon</a>
+                        <a href="damar-yolu-acma.html">Damar Yolu Açma</a>
+                        <a href="tansiyon-olcme.html">Tansiyon Ölçme</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="hizmet-bolgelerimiz.html" class="nav-link">Hizmet Bölgelerimiz <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="dropdown-menu">
+                        <a href="esenyurt-evde-saglik.html">Esenyurt</a>
+                        <a href="beylikduzu-evde-saglik.html">Beylikdüzü</a>
+                        <a href="avcilar-evde-saglik.html">Avcılar</a>
+                        <a href="buyukcekmece-evde-saglik.html">Büyükçekmece</a>
+                    </div>
+                </div>
                 <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
                 <a href="iletisim.html" class="nav-link">İletişim</a>
             </nav>
