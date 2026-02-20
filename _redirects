@@ -1,2 +1,1 @@
-# Redirect non-www to www
-https://saglikkapinda.com.tr/* https://www.saglikkapinda.com.tr/:splat 301!
+# Netlify handles www/non-www redirects automatically
